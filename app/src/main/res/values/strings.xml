@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">IDAndFR</string>
+    <string name="hardware_id">机器码:</string>
+    <string name="pls_init_algorithm">请先初始化算法</string>
+    <string name="choose_method">选择方式</string>
+    <string name="from_local_file">本地图片</string>
+    <string name="from_camera">摄像头</string>
+    <string name="ignore">忽略</string>
+    <string name="init_algorithm_success">初始化算法成功</string>
+    <string name="init_algorithm_fail">初始化算法失败</string>
+    <string name="extract_template_success">提取模板成功</string>
+    <string name="extract_template_fail">提取模板失败</string>
+    <string name="dbadd_template_success">添加模板成功</string>
+    <string name="dbadd_template_fail">添加模板失败</string>
+
+    <string name="identify_success">1:N识别成功</string>
+    <string name="identify_fail">1:N识别失败</string>
+    <string name="pls_choose_identify_file">请先选择识别文件</string>
+    <string name="pls_choose_verify_file">请先选择比对文件</string>
+
+    <string name="pls_extract_template1">请先提取模板1</string>
+    <string name="pls_extract_template2">请先提取模板2</string>
+
+    <string name="extract_template1_success">提取模板1成功============</string>
+    <string name="extract_template1_fail">提取模板1失败</string>
+
+    <string name="extract_template2_success">提取模板2成功</string>
+    <string name="extract_template2_fail">提取模板2失败</string>
+
+    <string name="verify_success">比对成功</string>
+    <string name="verify_fail">比对失败</string>
+</resources>

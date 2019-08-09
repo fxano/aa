@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txtReport"
+        android:layout_width="379dp"
+        android:layout_height="23dp"
+        android:text="Hello World!"
+        />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="379dp"
+        android:layout_height="23dp"
+        android:layout_below="@id/txtReport" />
+    />
+
+    <Button
+        android:id="@+id/bnOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnBnOpen"
+        android:text="连接"
+        android:layout_below="@id/txtStatus" />
+
+    <Button
+        android:id="@+id/bnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnBnClose"
+        android:text="断开"
+        android:layout_below="@id/bnOpen" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="256dp"
+        android:layout_height="300dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_below="@+id/bnOpen"
+        android:layout_toRightOf="@+id/bnClose"
+        android:layout_toEndOf="@+id/bnClose" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView"
+        android:layout_marginBottom="12dp"
+        android:layout_toEndOf="@+id/bnOpen"
+        android:layout_toRightOf="@+id/bnOpen"
+        android:visibility="invisible"
+        android:text="PID:" />
+
+    <EditText
+        android:id="@+id/editPID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:ems="10"
+        android:inputType="number"
+        android:visibility="invisible"
+        android:text="772" />
+
+</RelativeLayout>
+
+

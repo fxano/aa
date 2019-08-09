@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <SurfaceView
+        android:layout_width="960px"
+        android:layout_height="720px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/verifySurfaceView" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_image"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <Button
+            android:text="1:1比对"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/verifyButtonCamera" />
+        <Button
+            android:text="获取模板2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@id/verifyButtonCamera"
+            android:id="@+id/template2ButtonCamera" />
+        <Button
+            android:text="获取模板1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@id/template2ButtonCamera"
+            android:id="@+id/template1ButtonCamera" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/activity_status_size"
+            android:gravity="center"
+            android:layout_above="@id/template1ButtonCamera"
+            android:id="@+id/statusTextCamera"/>
+    </RelativeLayout>
+
+</LinearLayout>

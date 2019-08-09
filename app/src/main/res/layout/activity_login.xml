@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xl.admin.idandfr.activity.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/workbench_ic_finger_green"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/txt_120dp"
+        android:id="@+id/iv_logo"
+        />
+
+    <EditText
+        android:layout_below="@id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入账号"
+        android:layout_marginTop="@dimen/txt_30dp"
+        android:id="@+id/et_user"
+        android:layout_marginRight="@dimen/txt_20dp"
+        android:layout_marginLeft="@dimen/txt_20dp"
+        />
+    <EditText
+        android:layout_below="@id/et_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入账号"
+        android:layout_marginTop="@dimen/txt_10dp"
+        android:id="@+id/et_psw"
+        android:inputType="textPassword"
+        android:layout_marginRight="@dimen/txt_20dp"
+        android:layout_marginLeft="@dimen/txt_20dp"
+        />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:id="@+id/bt_login"
+            android:layout_marginTop="@dimen/txt_10dp"
+            android:layout_marginRight="@dimen/txt_20dp"
+            android:layout_marginLeft="@dimen/txt_20dp"
+            android:layout_below="@id/et_psw"
+            android:onClick="login"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bt_login"
+            android:layout_marginTop="@dimen/txt_10dp"
+            android:layout_marginRight="@dimen/txt_20dp"
+            android:layout_marginLeft="@dimen/txt_20dp"
+            android:id="@+id/et_ip"
+            android:text="http://118.250.161.108:1440/hengyangshi/android/"
+            />
+
+
+
+
+
+
+
+</RelativeLayout>
